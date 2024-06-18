@@ -1,0 +1,112 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'serif';
+  line-height: 1.5;
+}
+
+.container {
+  min-height: 100vh;
+  text-align: center;
+}
+
+.header {
+  font-size: 4rem;
+  padding: 1em 0 0.7em;
+}
+
+.main-movements {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  gap: 15rem;
+  padding: 3rem;
+}
+
+.movements {
+  & > h2 {
+    font-size: 2rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+.movements-buttons {
+  font-size: 6em;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.movements-computer {
+  & > h2 {
+    font-size: 2rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.movements-computer-buttons {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.movements-computer-check {
+  font-size: 2rem;
+  transform: translateY(0); /* -80px , 0px, 80px */
+}
+
+.movements-computer-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 3rem;
+}
+
+.btn {
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 1rem;
+  transform: scale(1);
+  display: inline-block;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn--rock {
+  background-color: rgb(80, 80, 80);
+}
+
+.btn--paper {
+  background-color: rgb(46, 139, 175);
+}
+
+.btn--scissor {
+  background-color: rgb(32, 53, 148);
+}
+
+.scores {
+  font-size: 3.2em;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  width: max-content;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.score:first-child {
+  color: rgb(32, 180, 32);
+}
+
+.score:last-child {
+  color: rgb(238, 28, 28);
+}
